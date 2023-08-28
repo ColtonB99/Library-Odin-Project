@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="CreateBookMenu-Overlay">
+        <div class="CreateBookMenu-Wrapper">
+            <p class="CreateBookMenu-Header bold">Create A New Book</p>
+            <input type="text" class="BookTitle textbox" placeholder="Book Title"></input>
+            <input type="text" class="AuthorName textbox" placeholder="Author Name"></input>
+            <input type="number" class="TotalPages textbox" placeholder="Total Pages" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            <div class="readit">
+                <p class="haveyoureadit">Have you read it?</p>
+                <input type="checkbox" class="Read-Unread-Checkbox" id="">
+            </div>
+            <button class="create-Book" onclick="CreateBook()">Submit</button>
+            <p class="errorShow">* Please fill out all fields.</p>
+        </div>
+    </div>
+
+
+    <div class="project-wrapper">
+        <div class="Library-Nav-Wrap">
+            <div class="margin-wrapper">
+                <h1 class="ProjectHeader">My Book Library</h1>
+                <p class="body">This project is an assignment from the Odin Project Web Development Course. In this assignment I was instructed to build a system that would allow the creation and display of books.</p>
+                <div class="analytics-wrapper">
+                    <div class="header-bar">
+                        <p class="YourLibrary bold headerItem">My Library</p>
+                        <p class="TotalBooks bold headerItem">Total Books: 0</p>
+                        <p class="TotalRead bold headerItem">Total Read: 0</p>
+                        <button class="AddBook" onclick="OpenMenu()">+ Add New Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="library">
+
+            
+            
+
+
+        </div>
+    
+    
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
